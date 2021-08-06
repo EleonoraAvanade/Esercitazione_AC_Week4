@@ -37,25 +37,25 @@ namespace CoreLayer.BusinessLayer
             return clienteRepository.Delete(item);
         }
 
-        //List<Ordine> ReadOrdine()
-        //{
-        //    return ordineRepository.Read();
-        //}
-        //Ordine GetByIdOrdine(int id)
-        //{
-        //    return ordineRepository.GetById(id);
-        //}
-        //bool AddOrdine(Ordine item)
-        //{
-        //    return ordineRepository.Add(item);
-        //}
-        //bool UpdateOrdine(Ordine item)
-        //{
-        //    return ordineRepository.Update(item);
-        //}
-        //bool DeleteOrdine(Ordine item)
-        //{
-        //    return ordineRepository.Delete(item);
-        //}
+        public List<Ordine> ReadOrdine()
+        {
+            return ordineRepository.Read();
+        }
+        public Ordine GetByIdOrdine(int id)
+        {
+            return ordineRepository.GetById(id);
+        }
+        public bool AddOrdine(Ordine item)
+        {
+            return ordineRepository.Add(item);
+        }
+        public bool UpdateOrdine(Ordine item)
+        {
+            return ordineRepository.Update(item);
+        }
+        public bool DeleteOrdine(Ordine item)
+        {
+            return ordineRepository.Delete(item);
+        }
     }
 }
